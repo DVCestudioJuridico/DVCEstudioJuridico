@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DVC Estudio Jurídico | Experiencia y Confianza Legal</title>
+    <!-- Meta tags SEO -->
+    <meta name="description" content="DVC Estudio Jurídico. Sólida trayectoria brindando asesoramiento legal integral y preventivo en Campana, CABA y Entre Ríos. Especialistas en derecho civil, comercial, laboral, sucesorio, previsional y asesoría para PyMEs.">
+    <meta name="keywords" content="estudio juridico, abogados campana, abogados caba, sucesiones, derecho laboral, divorcios, jubilaciones anses, contratos, pymes asesoria legal">
+    <meta name="author" content="WB Service">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#121212">
+    <!-- ⚠️ Al confirmar el dominio real, reemplazar esta URL en canonical + og:url + og:image + twitter:image -->
+    <link rel="canonical" href="https://willsnop-jeyker.github.io/DVCEstudioJuridico/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+    <!-- Open Graph (previsualización al compartir en WhatsApp, Facebook, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:site_name" content="DVC Estudio Jurídico">
+    <meta property="og:title" content="DVC Estudio Jurídico | Experiencia y Confianza Legal">
+    <meta property="og:description" content="Asesoramiento legal integral y preventivo en Campana, CABA y Entre Ríos. Derecho civil, comercial, laboral, sucesorio, previsional y para PyMEs.">
+    <meta property="og:url" content="https://willsnop-jeyker.github.io/DVCEstudioJuridico/">
+    <meta property="og:image" content="https://willsnop-jeyker.github.io/DVCEstudioJuridico/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="DVC Estudio Jurídico">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DVC Estudio Jurídico | Experiencia y Confianza Legal">
+    <meta name="twitter:description" content="Asesoramiento legal integral y preventivo en Campana, CABA y Entre Ríos.">
+    <meta name="twitter:image" content="https://willsnop-jeyker.github.io/DVCEstudioJuridico/assets/og-image.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome para Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navegación -->
+    <header class="main-header" id="header">
+        <div class="container header-container">
+            <a href="#hero" class="logo-container" id="site-logo">
+                <!-- Emblema DVC (imagen) + "Estudio Jurídico" como texto. Fallback si la imagen no carga. -->
+                <div class="logo-lockup" id="logo-lockup">
+                    <img src="assets/logo.png" alt="DVC Estudio Jurídico" class="logo-emblem" onerror="document.getElementById('logo-lockup').style.display='none'; document.getElementById('logo-fallback').style.display='flex';">
+                    <span class="logo-wordmark">Estudio<br>Jurídico</span>
+                </div>
+                <div id="logo-fallback" class="logo-text-fallback" style="display:none;">
+                    <i class="fa-solid fa-scale-balanced logo-icon"></i>
+                    <div class="logo-texts">
+                        <span class="logo-title">DVC</span>
+                        <span class="logo-subtitle">Estudio Jurídico</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Menú Desktop -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#hero" class="nav-link active">Inicio</a></li>
+                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="#especialidades" class="nav-link">Especialidades</a></li>
+                    <li><a href="#equipo" class="nav-link">Equipo</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botón de Contacto Rápido -->
+            <div class="header-actions">
+                <a href="#contacto" class="btn btn-outline btn-sm">Consulta Online</a>
+                <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Abrir menú">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú Móvil Lateral Overlay -->
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-header">
+            <span class="mobile-logo">DVC Estudio</span>
+            <button class="mobile-close" id="mobile-close" aria-label="Cerrar menú">&times;</button>
+        </div>
+        <ul class="mobile-menu-links">
+            <li><a href="#hero" class="mobile-link">Inicio</a></li>
+            <li><a href="#nosotros" class="mobile-link">Nosotros</a></li>
+            <li><a href="#especialidades" class="mobile-link">Especialidades</a></li>
+            <li><a href="#equipo" class="mobile-link">Equipo</a></li>
+            <li><a href="#contacto" class="mobile-link">Contacto</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+            <a href="https://wa.me/5493489695430" target="_blank" class="btn btn-primary btn-block"><i class="fa-brands fa-whatsapp"></i> Escríbenos</a>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-bg"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fa-solid fa-shield-halved"></i> Más de <span id="exp-years-badge">10</span> años de trayectoria profesional
+                    </div>
+                    <h1 class="hero-title">Experiencia que respalda.<br><span class="text-gradient">Resultados que avanzan.</span></h1>
+                    <p class="hero-lead">En DVC Estudio Jurídico brindamos soluciones legales integrales con un enfoque preventivo y personalizado. Actuamos en diversas áreas del derecho, con enfoque personalizado y una mirada interdisciplinaria que combina la práctica jurídica, la gestión y la comunicación estratégica.</p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/5493489695430?text=Hola,%20quisiera%20hacer%20una%20consulta%20legal." target="_blank" class="btn btn-primary btn-lg">
+                            <i class="fa-brands fa-whatsapp"></i> Iniciar Consulta Rápida
+                        </a>
+                        <a href="#especialidades" class="btn btn-secondary btn-lg">Nuestros Servicios</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nosotros Section -->
+        <section class="nosotros-section section-padding" id="nosotros">
+            <div class="container">
+                <div class="grid grid-2">
+                    <div class="nosotros-image-wrapper">
+                        <!-- Imagen representativa de la balanza/justicia minimalista en CSS/diseño -->
+                        <div class="nosotros-card-accent">
+                            <div class="accent-number" id="exp-years-accent">10+</div>
+                            <div class="accent-text">Años defendiendo los intereses de nuestros clientes</div>
+                        </div>
+                        <div class="nosotros-decorative-backdrop"></div>
+                    </div>
+                    <div class="nosotros-content">
+                        <span class="section-subtitle">Sobre el Estudio</span>
+                        <h2 class="section-title">Mirada integral y preventiva del derecho</h2>
+                        <p class="section-text">DVC Estudio Jurídico está conformado por un equipo multidisciplinario de profesionales con amplia experiencia.</p>
+                        <p class="section-text">Ofrecemos soluciones legales efectivas, preventivas y resolutivas. Conocemos a fondo cada caso para brindar una atención personalizada y adaptada a las necesidades reales de nuestros clientes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Especialidades / Servicios Section -->
+        <section class="especialidades-section section-padding bg-light" id="especialidades">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Áreas de Práctica</span>
+                    <h2 class="section-title">Especialidades y Servicios Legales</h2>
+                    <p class="section-lead">Ofrecemos asesoramiento integral adaptado a particulares, familias, PyMEs y emprendedores.</p>
+                </div>
+
+                <div class="grid grid-3 specialty-grid">
+                    <!-- Tarjeta 1: Laboral -->
+                    <div class="specialty-card">
+                        <div class="card-icon"><i class="fa-solid fa-briefcase"></i></div>
+                        <h3>Derecho Laboral</h3>
+                        <p>Acompañamos tanto a trabajadores como a empleadores, brindando asesoramiento estratégico, tramitación y patrocinio en conflictos laborales, negociación colectiva, inspecciones y cumplimiento normativo. Nuestro objetivo es proteger los derechos, minimizar riesgos y ofrecer soluciones ágiles en cada etapa de la relación laboral.</p>
+                        <p class="card-list-title">Servicios para trabajadores</p>
+                        <ul class="card-list">
+                            <li>Asesoramiento y representación en despidos con o sin causa.</li>
+                            <li>Reclamos por indemnización, liquidación de haberes y preaviso.</li>
+                            <li>Trabajo no registrado (“en negro”), diferencia de cargas sociales y regularización.</li>
+                            <li>Accidentes de trabajo, enfermedades profesionales y reclamos por régimen de riesgos del trabajo.</li>
+                        </ul>
+                        <div class="card-more">
+                            <div class="card-more-inner">
+                                <p class="card-list-title">Servicios para empleadores / PyMEs / empresas</p>
+                                <ul class="card-list">
+                                    <li>Auditorías laborales y revisiones de cumplimiento normativo interno (contratos, registro, cargas, jornada).</li>
+                                    <li>Asesoramiento en contratación: redacción y revisión de contratos de trabajo, pasantías, becarios y trabajadores temporarios.</li>
+                                    <li>Asistencia en desvinculación, despidos masivos, planes de retiro y reorganización empresarial.</li>
+                                    <li>Defensa en inspecciones laborales.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button type="button" class="card-toggle" aria-expanded="false">
+                            <span class="card-toggle-text">Ver servicios para empleadores</span>
+                            <i class="fa-solid fa-chevron-down card-toggle-icon"></i>
+                        </button>
+                    </div>
+
+                    <!-- Tarjeta 2: Familia -->
+                    <div class="specialty-card">
+                        <div class="card-icon"><i class="fa-solid fa-people-roof"></i></div>
+                        <h3>Familia y Mediaciones</h3>
+                        <p>Resolución estratégica en divorcios, convenios reguladores, cuota alimentaria, regímenes de comunicación y división de bienes. Nos especializamos en mediaciones y métodos alternativos de resolución de conflictos con el objeto de lograr acuerdos rápidos y efectivos. Respaldamos su patrimonio con la máxima empatía y eficacia profesional.</p>
+                        <ul class="card-list">
+                            <li>Divorcios y acuerdos de alimentos</li>
+                            <li>Régimen de comunicación y cuidado parental</li>
+                            <li>Mediaciones judiciales y extrajudiciales</li>
+                            <li>Otros</li>
+                        </ul>
+                    </div>
+
+                    <!-- Tarjeta 3: Sucesiones -->
+                    <div class="specialty-card">
+                        <div class="card-icon"><i class="fa-solid fa-file-signature"></i></div>
+                        <h3>Derecho de las Sucesiones</h3>
+                        <p>Brindamos un acompañamiento integral en procesos sucesorios, cuidando la claridad y el orden patrimonial de cada familia.</p>
+                        <ul class="card-list">
+                            <li>Tramitación completa de sucesiones</li>
+                            <li>Convenios privados y judiciales de partición</li>
+                            <li>Representación de herederos y cónyuges supérstites</li>
+                            <li>Cesión de derechos hereditarios</li>
+                            <li>Administración sucesoria y gestiones ante organismos y registros</li>
+                        </ul>
+                    </div>
+
+                    <!-- Tarjeta 4: Civil y Comercial -->
+                    <div class="specialty-card">
+                        <div class="card-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                        <h3>Derecho Civil y Comercial</h3>
+                        <ul class="card-list">
+                            <li>Desalojos</li>
+                            <li>Concursos y Quiebras</li>
+                            <li>Embargos e Inhibiciones de bienes</li>
+                            <li>Ejecuciones, Contratos, entre otros.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Tarjeta 5: PyMEs y Emprendedores -->
+                    <div class="specialty-card">
+                        <div class="card-icon"><i class="fa-solid fa-handshake"></i></div>
+                        <h3>Servicios para PyMEs</h3>
+                        <p>Consultoría legal preventiva para empresas y startups. Nuestro propósito es convertirnos en un aliado legal estratégico, acompañando a pequeñas y medianas empresas en su crecimiento, optimizando recursos y evitando contingencias legales.</p>
+                        <ul class="card-list">
+                            <li>Redacción y revisión de contratos comerciales, laborales, de servicios y licitaciones.</li>
+                            <li>Auditorías laborales y verificación de cumplimiento normativo.</li>
+                            <li>Asistencia en desvinculaciones, reorganización empresarial y despidos masivos.</li>
+                            <li>Defensa en inspecciones laborales.</li>
+                            <li>Acompañamiento preventivo para la toma de decisiones seguras.</li>
+                            <li>Soporte legal continuo adaptado a la dinámica de cada negocio.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Tarjeta 6: Previsional -->
+                    <div class="specialty-card">
+                        <div class="card-icon"><i class="fa-solid fa-hands-holding"></i></div>
+                        <h3>Derecho Previsional</h3>
+                        <p>Acompañamos a personas y familias en todo lo referente a jubilaciones, pensiones, reconocimiento de servicios y reajustes de haberes. Buscamos que accedan a los beneficios que les corresponden, maximicen su rendimiento previsional y cuenten con asesoramiento profesional durante todo el trámite, tanto administrativo como judicial.</p>
+                        <ul class="card-list">
+                            <li>Asesoramiento integral antes de iniciar el trámite: evaluación de la situación registral.</li>
+                            <li>Determinación del momento oportuno para iniciar el trámite jubilatorio una vez cumplidos los años de aportes.</li>
+                            <li>Tramitación de jubilaciones y pensiones en ANSES – IPS.</li>
+                            <li>Jubilaciones con aportes, sin aportes o con aportes insuficientes.</li>
+                            <li>Jubilaciones por edad avanzada, docente, agraria y regímenes especiales.</li>
+                        </ul>
+                        <div class="card-more">
+                            <div class="card-more-inner">
+                            <ul class="card-list">
+                                <li>Planes de regularización de aportes (moratorias previsionales vigentes).</li>
+                                <li>Pensión por fallecimiento (viudez, hijos menores o con discapacidad).</li>
+                                <li>Retiro por invalidez o pensión por invalidez.</li>
+                                <li>Reconocimiento de servicios y años de aportes (laborales, autónomos) ante ANSES u otras cajas previsionales.</li>
+                                <li>Cálculo y proyección previsional: años aportados, simulación del haber jubilatorio y estimación del monto (“¿cuándo me puedo jubilar?”).</li>
+                                <li>Reajustes de haberes y juicios previsionales: impugnación de liquidaciones, demandas por cálculo incorrecto y retroactivos.</li>
+                                <li>Asesoramiento a empresas y profesionales sobre obligaciones previsionales, régimen de caja y carga de aportes.</li>
+                                <li>Procedimientos administrativos y judiciales: recursos, amparos previsionales y seguimiento de expedientes.</li>
+                            </ul>
+                            </div>
+                        </div>
+                        <button type="button" class="card-toggle" aria-expanded="false">
+                            <span class="card-toggle-text">Ver todos los servicios</span>
+                            <i class="fa-solid fa-chevron-down card-toggle-icon"></i>
+                        </button>
+                    </div>
+
+                    <!-- Tarjeta 7: Administrativo -->
+                    <div class="specialty-card">
+                        <div class="card-icon"><i class="fa-solid fa-building"></i></div>
+                        <h3>Derecho Administrativo</h3>
+                        <p>Patrocinio y representación ante organismos públicos municipales, provinciales y nacionales. Descargos por multas, recursos jerárquicos, defensa en sumarios administrativos y licitaciones públicas.</p>
+                    </div>
+
+                    <!-- Tarjeta 8: Construcción -->
+                    <div class="specialty-card">
+                        <div class="card-icon"><i class="fa-solid fa-trowel-bricks"></i></div>
+                        <h3>Derecho de la Construcción</h3>
+                        <p>Asesoramos a empresas del sector de la construcción en todas las etapas de sus proyectos, aportando seguridad jurídica y fortaleciendo su competitividad.</p>
+                        <ul class="card-list">
+                            <li>Asesoría en obras privadas y públicas.</li>
+                            <li>Asistencia en licitaciones, concursos y contrataciones directas.</li>
+                            <li>Revisión de pliegos, administración contractual y documentación técnica.</li>
+                            <li>Reclamos, negociaciones y mediaciones con contratistas y entes públicos, entre otros.</li>
+                            <li>Prevención de conflictos en la ejecución y fase de operación.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- El Equipo Section -->
+        <section class="equipo-section section-padding" id="equipo">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Profesionales</span>
+                    <h2 class="section-title">El Equipo de Socios</h2>
+                    <p class="section-lead">Un equipo con amplia experiencia académica y práctica, comprometido con la excelencia y la cercanía al cliente.</p>
+                </div>
+
+                <div class="grid grid-3 equipo-grid">
+                    <!-- Ficha Dra. Viviana Dumunset -->
+                    <div class="member-card">
+                        <div class="member-img-container">
+                            <div class="member-avatar">VD</div>
+                        </div>
+                        <div class="member-info">
+                            <span class="member-role">Abogada y Escribana</span>
+                            <h3>Dra. Viviana Dumunset</h3>
+                            <p class="member-bio">Dedicada al derecho Previsional, Civil, Comercial y Mediadora, Viviana complementa la práctica legal con una marcada visión notarial.</p>
+                            <div class="member-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Campana &nbsp;·&nbsp; CABA &nbsp;·&nbsp; Entre Ríos</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ficha Dra. Mariana Valdés -->
+                    <div class="member-card">
+                        <div class="member-img-container">
+                            <div class="member-avatar">MV</div>
+                        </div>
+                        <div class="member-info">
+                            <span class="member-role">Abogada &amp; Lic. Relaciones Públicas</span>
+                            <h3>Dra. Mariana Valdés</h3>
+                            <p class="member-bio">Con amplia experiencia en negociación de contratos complejos, derecho administrativo y gestión de riesgos legales, Mariana desarrolla su práctica en derecho preventivo, contratación pública y privada, y consultoría estratégica para empresas y PyMEs.</p>
+                            <div class="member-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Campana</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ficha Dr. Claudio Javier Chamorro -->
+                    <div class="member-card">
+                        <div class="member-img-container">
+                            <div class="member-avatar">CC</div>
+                        </div>
+                        <div class="member-info">
+                            <span class="member-role">Abogado (UBA)</span>
+                            <h3>Dr. Claudio J. Chamorro</h3>
+                            <p class="member-bio">Con sólida trayectoria en litigios laborales, civiles y previsionales, Claudio aporta un perfil técnico en Derecho Administrativo Nacional, Provincial y Municipal, con un rol activo en la docencia.</p>
+                            <div class="member-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> CABA &nbsp;·&nbsp; Campana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto Section -->
+        <section class="contacto-section section-padding bg-light" id="contacto">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Contacto</span>
+                    <h2 class="section-title">Comuníquese con Nosotros</h2>
+                    <p class="section-lead">Deje su consulta y un profesional de nuestro equipo lo contactará a la brevedad para asesorarlo.</p>
+                </div>
+
+                <div class="grid grid-2 contacto-layout">
+                    <!-- Formulario de Contacto -->
+                    <div class="contacto-form-container">
+                        <h3>Envíe su Consulta</h3>
+                        <p class="form-instruction">Complete el formulario y le responderemos de manera formal y confidencial.</p>
+                        <form id="legal-contact-form" class="legal-form">
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="fname">Nombre y Apellido *</label>
+                                    <input type="text" id="fname" name="name" required placeholder="Ej: Juan Pérez">
+                                </div>
+                                <div class="form-group">
+                                    <label for="fphone">Teléfono de Contacto *</label>
+                                    <input type="tel" id="fphone" name="phone" required placeholder="Ej: 3489554433">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="femail">Correo Electrónico *</label>
+                                    <input type="email" id="femail" name="email" required placeholder="Ej: juan.perez@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="fspecialty">Área de Interés / Especialidad</label>
+                                <select id="fspecialty" name="specialty">
+                                    <option value="General">Consulta General</option>
+                                    <option value="Laboral">Derecho Laboral / Despidos</option>
+                                    <option value="Familia">Familia / Divorcios / Alimentos</option>
+                                    <option value="Sucesiones">Sucesiones y Herencias</option>
+                                    <option value="Civil y Comercial">Contratos / Civil y Comercial</option>
+                                    <option value="PyMEs">Asesoría para PyMEs / Empresas</option>
+                                    <option value="Previsional">Jubilaciones / ANSES</option>
+                                    <option value="Otros">Otros Asuntos</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="fmessage">Detalle su Consulta *</label>
+                                <textarea id="fmessage" name="message" rows="5" required placeholder="Escriba brevemente su consulta legal aquí..."></textarea>
+                            </div>
+                            <div class="form-consent">
+                                <input type="checkbox" id="fconsent" name="consent" required>
+                                <label for="fconsent">He leído y acepto la <a href="privacidad.html" target="_blank" rel="noopener">Política de Privacidad</a> y presto mi consentimiento para el tratamiento de mis datos personales con la finalidad de responder mi consulta.</label>
+                            </div>
+
+                            <div class="form-alert" id="form-alert"></div>
+                            <button type="submit" class="btn btn-primary btn-block" id="btn-submit">
+                                <i class="fa-solid fa-paper-plane"></i> Enviar Mensaje Formal
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Datos de Contacto y Sedes -->
+                    <div class="contacto-info-container">
+                        <!-- Sede Campana -->
+                        <div class="sede-card">
+                            <div class="sede-header">
+                                <div class="sede-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <h4>Sede Campana (Pcia. Bs. As.)</h4>
+                                    <p>Belgrano 212, Campana</p>
+                                </div>
+                            </div>
+                            <div class="sede-details">
+                                <p><i class="fa-solid fa-phone"></i> <a href="tel:+5493489695430" class="contact-link">+54 9 3489 695430</a></p>
+                                <p><i class="fa-solid fa-phone"></i> <a href="tel:+5493489577166" class="contact-link">+54 9 3489 577166</a></p>
+                            </div>
+                            <!-- Mapa Campana Iframe OpenStreetMap -->
+                            <div class="sede-map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.839841804987!2d-58.96205792476561!3d-34.163259973114136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb7213b28b7e21%3A0xe54e3d744bcf84ec!2sBelgrano%20212%2C%20Campana%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1717500000000!5m2!1ses-419!2sar" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+
+                        <!-- Sede CABA -->
+                        <div class="sede-card">
+                            <div class="sede-header">
+                                <div class="sede-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <h4>Sede CABA (Capital Federal)</h4>
+                                    <p>Ecuador 698 2° C, Balvanera</p>
+                                </div>
+                            </div>
+                            <div class="sede-details">
+                                <p><i class="fa-solid fa-phone"></i> <a href="tel:+5491165194698" class="contact-link">+54 9 11 6519 4698</a></p>
+                                <p><i class="fa-solid fa-phone"></i> <a href="tel:+5491123615575" class="contact-link">+54 9 11 2361 5575</a></p>
+                            </div>
+                            <!-- Mapa CABA Iframe OpenStreetMap -->
+                            <div class="sede-map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0906233481977!2d-58.406140524741366!3d-34.60439407295449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca1172a3922d%3A0x7d81a9adbf23e590!2sEcuador%20698%2C%20C1214ADL%20CABA!5e0!3m2!1ses-419!2sar!4v1717500000000!5m2!1ses-419!2sar" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+
+                        <!-- Sede Entre Ríos -->
+                        <div class="sede-card">
+                            <div class="sede-header">
+                                <div class="sede-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <h4>Sede Entre Ríos</h4>
+                                    <p>Provincia de Entre Ríos</p>
+                                </div>
+                            </div>
+                            <div class="sede-details">
+                                <p><i class="fa-solid fa-phone"></i> <a href="tel:+5493446600543" class="contact-link">+54 9 3446 600543</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Correo e Instagram -->
+                        <div class="otras-vias-card">
+                            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:dvcestudiojuridico@gmail.com" class="contact-link">dvcestudiojuridico@gmail.com</a></p>
+                            <p><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/dvcestudiojuridico/" target="_blank" rel="noopener" class="contact-link">@dvcestudiojuridico</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Marca -->
+                <div class="footer-brand">
+                    <div class="footer-logo-lockup">
+                        <img src="assets/logo-footer.png" alt="DVC Estudio Jurídico" class="footer-logo">
+                        <div class="footer-brand-text">
+                            <span class="footer-wordmark">Estudio<br>Jurídico</span>
+                        </div>
+                    </div>
+                    <p class="footer-tagline">Experiencia que respalda.<br>Resultados que avanzan.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/dvcestudiojuridico/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/5493489695430" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="mailto:dvcestudiojuridico@gmail.com" aria-label="Correo electrónico"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Navegación -->
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#hero">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#equipo">Equipo</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="privacidad.html">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+
+                <!-- Sedes -->
+                <div class="footer-col">
+                    <h4>Sedes</h4>
+                    <ul class="footer-sedes">
+                        <li><span>Campana</span>Belgrano 212, Pcia. Bs. As.</li>
+                        <li><span>CABA</span>Ecuador 698 2° C, Balvanera</li>
+                        <li><span>Entre Ríos</span>Provincia de Entre Ríos</li>
+                    </ul>
+                </div>
+
+                <!-- Contacto -->
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="tel:+5493489695430"><i class="fa-solid fa-phone"></i> +54 9 3489 695430</a></li>
+                        <li><a href="mailto:dvcestudiojuridico@gmail.com"><i class="fa-solid fa-envelope"></i> dvcestudiojuridico@gmail.com</a></li>
+                        <li><a href="https://www.instagram.com/dvcestudiojuridico/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> @dvcestudiojuridico</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-disclaimer">La información de este sitio es de carácter netamente informativo y no constituye asesoramiento legal vinculante.</p>
+                <div class="footer-bottom-row">
+                    <p>&copy; <span id="footer-year">2026</span> DVC Estudio Jurídico. Todos los derechos reservados.</p>
+                    <p class="developer-credit">Diseño y desarrollo web por <a href="https://www.wbserviceinformatica.com.ar" target="_blank" rel="noopener">WB Service</a>.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/5493489695430?text=Hola,%20quisiera%20hacer%20una%20consulta%20legal." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Datos estructurados (SEO / Google) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "@id": "https://willsnop-jeyker.github.io/DVCEstudioJuridico/#estudio",
+      "name": "DVC Estudio Jurídico",
+      "description": "Estudio jurídico con sólida trayectoria en asesoramiento legal integral y preventivo. Derecho laboral, familia y mediaciones, sucesiones, civil y comercial, PyMEs, previsional, administrativo y de la construcción.",
+      "url": "https://willsnop-jeyker.github.io/DVCEstudioJuridico/",
+      "logo": "https://willsnop-jeyker.github.io/DVCEstudioJuridico/assets/apple-touch-icon.png",
+      "image": "https://willsnop-jeyker.github.io/DVCEstudioJuridico/assets/og-image.png",
+      "email": "dvcestudiojuridico@gmail.com",
+      "telephone": "+5493489695430",
+      "priceRange": "$$",
+      "sameAs": ["https://www.instagram.com/dvcestudiojuridico"],
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Campana, Provincia de Buenos Aires" },
+        { "@type": "AdministrativeArea", "name": "Ciudad Autónoma de Buenos Aires" },
+        { "@type": "AdministrativeArea", "name": "Provincia de Entre Ríos" }
+      ],
+      "knowsAbout": [
+        "Derecho Laboral", "Familia y Mediaciones", "Sucesiones y Herencias",
+        "Derecho Civil y Comercial", "Servicios para PyMEs", "Derecho Previsional",
+        "Derecho Administrativo", "Derecho de la Construcción"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Belgrano 212",
+        "addressLocality": "Campana",
+        "addressRegion": "Buenos Aires",
+        "addressCountry": "AR"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": -34.163260, "longitude": -58.962058 },
+      "location": [
+        {
+          "@type": "Place",
+          "name": "DVC Estudio Jurídico — Sede Campana",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Belgrano 212",
+            "addressLocality": "Campana",
+            "addressRegion": "Buenos Aires",
+            "addressCountry": "AR"
+          },
+          "geo": { "@type": "GeoCoordinates", "latitude": -34.163260, "longitude": -58.962058 }
+        },
+        {
+          "@type": "Place",
+          "name": "DVC Estudio Jurídico — Sede CABA",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Ecuador 698 2° C, Balvanera",
+            "addressLocality": "Ciudad Autónoma de Buenos Aires",
+            "addressRegion": "CABA",
+            "addressCountry": "AR"
+          },
+          "geo": { "@type": "GeoCoordinates", "latitude": -34.604394, "longitude": -58.406141 }
+        }
+      ]
+    }
+    </script>
+
+    <!-- JS Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
