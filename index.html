@@ -401,6 +401,9 @@
                                 <label for="fmessage">Detalle su Consulta *</label>
                                 <textarea id="fmessage" name="message" rows="5" required placeholder="Escriba brevemente su consulta legal aquí..."></textarea>
                             </div>
+                            <!-- Honeypot antispam: invisible para humanos; los bots lo completan y Formspree descarta el envío -->
+                            <input type="text" name="_gotcha" id="fgotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
                             <div class="form-consent">
                                 <input type="checkbox" id="fconsent" name="consent" required>
                                 <label for="fconsent">He leído y acepto la <a href="privacidad.html" target="_blank" rel="noopener">Política de Privacidad</a> y presto mi consentimiento para el tratamiento de mis datos personales con la finalidad de responder mi consulta.</label>

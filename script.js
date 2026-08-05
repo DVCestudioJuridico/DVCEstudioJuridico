@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //       Copiar SOLO el ID final (ej: 'xdorwqkv') y pegarlo abajo.
     //    4) El primer envio real pide confirmar el email una unica vez.
     //    Mientras el ID no este configurado, el formulario avisa y ofrece WhatsApp.
-    const FORMSPREE_ID = 'TU_ID_DE_FORMSPREE';
+    const FORMSPREE_ID = 'moeaqkad';
     // WhatsApp del estudio (+54 9 3489 69-5430). Confirmado con el cliente el 16/7.
     const WHATSAPP_ESTUDIO = '5493489695430';
 
@@ -141,6 +141,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
+
+            // Honeypot antispam: si un bot completó el campo invisible, simulamos éxito y no enviamos.
+            const gotcha = document.getElementById('fgotcha');
+            const honeypot = gotcha ? gotcha.value : '';
+            if (honeypot) {
+                contactForm.reset();
+                showAlert('✓ Consulta enviada correctamente. Le responderemos a la brevedad.', 'success');
+                return;
+            }
 
             const data = {
                 name: document.getElementById('fname').value.trim(),
@@ -196,6 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         email: data.email,
                         area: data.specialty,
                         consulta: data.message,
+                        _gotcha: honeypot,
                         _subject: `Nueva consulta web (${data.specialty}) - ${data.name}`
                     })
                 });
