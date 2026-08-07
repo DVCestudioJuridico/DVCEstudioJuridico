@@ -20,16 +20,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const footerYear = document.getElementById('footer-year');
     if (footerYear) footerYear.textContent = new Date().getFullYear();
 
-    // 1. Header Scrolled Styling
+    // 1. Header: sombra al scrollear + ocultar/mostrar en mobile
     const header = document.getElementById('header');
+    let lastScrollY = window.scrollY;
     const handleScroll = () => {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
+        const y = window.scrollY;
+        // Sombra al despegarse del top
+        if (y > 50) header.classList.add('scrolled');
+        else header.classList.remove('scrolled');
+        // Ocultar al bajar / mostrar al subir (solo en mobile/tablet)
+        const isMobile = window.matchMedia('(max-width: 991px)').matches;
+        if (!isMobile || y <= 0) {
+            header.classList.remove('header-hidden');
+        } else if (y > lastScrollY && y > 120) {
+            header.classList.add('header-hidden');    // bajando
+        } else if (y < lastScrollY) {
+            header.classList.remove('header-hidden');  // subiendo
         }
+        lastScrollY = y;
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll(); // Ejecutar inicialmente en caso de recarga a mitad de página
 
     // 2. Control de Menú Móvil Lateral
